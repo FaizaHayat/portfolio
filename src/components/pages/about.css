@@ -1,0 +1,93 @@
+
+.cards{
+   
+        width: 90%;
+        border-radius: 4px;
+        background: transparent;
+        display: inline-flex;
+        gap: 5px;
+        padding: 30px;
+
+
+}
+
+.myCard {
+    background-color: transparent;
+    width: 550px;
+    height: 400px;
+    perspective: 1000px;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .innerCard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+  
+  .myCard:hover .innerCard {
+    transform: rotateY(180deg);
+  }
+  
+  .frontSide,
+  .backSide {
+    position: absolute;
+    display: flex;
+    background-color: rgb(6, 1, 35);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgba(93, 48, 255, 0.8);
+    border-radius: 1rem;
+    color: rgb(173, 173, 173);
+    font-weight: 700;
+  }
+  
+  .backSide {
+    transform: rotateY(180deg);
+  }
+  
+  .frontSide::before,
+  .backSide::before {
+    top: 50%;
+    left: 50%;
+    background-color: rgb(72, 72, 72);
+    transform: translate(-50%, -50%);
+   
+    color: black;
+    width: 110%;
+    height: 110%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 1em;
+  
+    
+  }
+  
+  @keyframes animate {
+    0% {
+      opacity: 0.3;
+    }
+  
+    80% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0.3;
+    }
+  }

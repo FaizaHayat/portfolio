@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  height: -webkit-fill-available;
+
+background:
+  radial-gradient(ellipse at 20% 20%, #35234b 0%, transparent 70%),
+  radial-gradient(ellipse at 60% 20%, #103050 0%, transparent 70%),
+  radial-gradient(ellipse at 100% 20%, #000000 0%, transparent 70%),
+  radial-gradient(ellipse at 100% 100%, #4300fb 0%, transparent 70%),
+  radial-gradient(ellipse at 20% 100%, #010101 0%, transparent 70%);
+
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

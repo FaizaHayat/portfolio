@@ -1,0 +1,41 @@
+/* Education.css */
+.heading {
+    font-size: 30px;
+    color: #ddd;
+    margin-bottom: 10px;
+    text-align: center;
+    
+  }
+.education {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 10px 12px 14px rgba(56, 1, 255, 0.1);
+    background-color: transparent;
+    align-items: center;
+  }
+  
+ 
+  
+  .education ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .education li {
+    margin-bottom: 20px;
+  }
+  
+  .education h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #b1b1b1;
+  }
+  
+  .education p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #8b8b8b;
+  }
+  
