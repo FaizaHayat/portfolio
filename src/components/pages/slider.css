@@ -1,24 +1,64 @@
 /* slider.css */
 
 .portfolio-card {
-  position: relative;
-  display: contents;
+  display: flex;
   align-items: center;
-  box-shadow: 0px 4px 10px rgba(81, 80, 80, 0.2);
+  max-width: 78%;
+  background-color: transparent;
+  padding-left: 11%;
   color: rgb(255, 255, 255);
 }
+/* Add this CSS to your stylesheet */
+
+.portfolio-card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+a{
+  color: chartreuse;
+  text-shadow: 0px 17px 17px rgba(255, 68, 0, 0.2);
+}
+
+.portfolio-card-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.portfolio-card-text {
+  flex: 1; /* Takes up the left side */
+  padding: 20px;
+}
+
+.portfolio-card-image {
+  flex: 1; /* Takes up the right side */
+  padding: auto;
+ /* Adjust the image width to fit its container */
+
+}
+img{
+  height: auto;
+  max-width: 90%;
+  background-color: transparent;
+}
+
+/* You can add more styling to .portfolio-card-image, like setting a max-width or height if needed */
 
 .portfolio-card-content {
   position: relative;
-  padding: 10rem 2rem; /* Adjust horizontal padding */
-  text-align: center;
+  font-style: oblique;
+  padding: 8%;
+  height: 100%;
+  width: 100%;
+  text-align: justify;
 
 }
 
 .portfolio-card-title {
   font-size: 37px;
   font-weight: bold;
-  text-shadow: 0px 10px 17px rgba(255, 153, 0, 0.2);
+  text-shadow: 0px 17px 17px rgba(255, 153, 0, 0.2);
 }
 
 .portfolio-card-subtitle {

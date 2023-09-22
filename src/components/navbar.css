@@ -1,7 +1,7 @@
 /* Navigation bar styling */
 .navbar {
   width: 100%;
-  padding-top: 40px;
+  padding-top: 35px;
   background-color: transparent;
   justify-content: center;
 }
@@ -15,7 +15,7 @@
 
 .nav-item {
   margin: 0;
-  padding: 15px;
+  padding: 5px;
 }
 
 .nav-item a {
@@ -34,8 +34,9 @@
 button {
   padding: 10px 20px;
   font-size: 20px;
+  font-style: italic;
   font-weight: 500;
-  color: #f9f9f980;
+  color: #ffffff80;
   background-color: transparent;
   border: none;
   transition: 0.5s ease;
@@ -48,8 +49,8 @@ button::before {
 button::after, button::before {
   content: '';
   width: 0%;
-  height: 2px;
-  background: #0800f4;
+  height: 3px;
+  background: #0003ab;
   display: block;
   transition: 0.5s;
 }
@@ -58,3 +59,9 @@ button:hover::after, button:hover::before {
   width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .nav-item button {
+    font-size: 9px;
+    padding: 1px;
+  }
+}
