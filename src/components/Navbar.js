@@ -17,7 +17,7 @@ function Navbar() {
           <Link to="/skill">
             <button className='btn'>Skills</button>
           </Link>
-        </li>
+        </li> 
         <li className="nav-item">
           <Link to="/education">
             <button className='btn'>Education</button>
@@ -35,7 +35,7 @@ function Navbar() {
         </li>
 
         <li className="nav-item">
-          <a href="https://github.com/FaizaHayyat" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/FaizaHayat" target="_blank" rel="noopener noreferrer">
             <img src={GithubIcon} alt="GitHub" />
           </a>
         </li>
